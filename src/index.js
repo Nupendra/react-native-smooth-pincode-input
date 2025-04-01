@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {ViewPropTypes} from 'deprecated-react-native-prop-types';
+import {ViewPropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
 import {
   View,
   Text,
@@ -292,8 +292,8 @@ SmoothPinCodeInput.propTypes = {
   cellStyleFocused: ViewPropTypes.style,
   cellStyleFilled: ViewPropTypes.style,
 
-  textStyle: Text.propTypes.style,
-  textStyleFocused: Text.propTypes.style,
+  textStyle: TextPropTypes.style,
+  textStyleFocused: TextPropTypes.style,
 
   animated: PropTypes.bool,
   animationFocused: PropTypes.oneOfType([
